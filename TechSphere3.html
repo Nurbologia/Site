@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>TechSphere - IT портал</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="TechSphere3.css" />
+    <link rel="icon" href="C:\Users\saken\Downloads\Untitled_logo_1_free-file.jpg" type="image/png">
+    <script src="TechSphere3.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-menu" id="sideMenu">
+        <div class="menu-toggle" id="menuToggle">
+        </div>
+        <div class="auth-buttons">
+          <a href="#" class="auth-btn login-btn">
+            Вход
+          </a>
+          <a href="#" class="auth-btn register-btn">
+            Регистрация
+          </a>
+        </div>
+        <div class="menu-items">
+          <a href="#" class="menu-item" data-content="main">Главная</a>
+          <a href="#" class="menu-item" data-content="news">Новости</a>
+          <a href="#" class="menu-item" data-content="education">Обучение</a>
+          <a href="#" class="menu-item" data-content="blog">Блог</a>
+          <a href="#" class="menu-item" data-content="about">О нас</a>
+          <a href="#" class="menu-item" data-content="contacts">Контакты</a>
+        </div>
+      </div>
+      
+      <!-- Вход -->
+      <div class="modal-overlay">
+        <div class="auth-modal" id="loginModal">
+          <h2>Вход</h2>
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Пароль</label>
+              <input type="password" id="loginPassword" required>
+            </div>
+            <button type="submit" class="auth-submit">Войти</button>
+            <div class="auth-links">
+              <a href="#" class="forgot-password">Забыли пароль?</a>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Регистрация -->
+        <div class="auth-modal" id="registerModal">
+          <h2>Регистрация</h2>
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="registerName">Имя</label>
+              <input type="text" id="registerName" required>
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Email</label>
+              <input type="email" id="registerEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Пароль</label>
+              <input type="password" id="registerPassword" required>
+            </div>
+            <div class="form-group">
+              <label for="registerPasswordConfirm">Подтвердите пароль</label>
+              <input type="password" id="registerPasswordConfirm" required>
+            </div>
+            <button type="submit" class="auth-submit">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="content">
+        <header>
+          <h1>TechSphere</h1>
+          <p>Ваш проводник в мире IT</p>
+        </header>
+        
+        <main id="mainContent">
+          <div class="content-section active" id="main">
+            <h2>Главная</h2>
+            <p>Добро пожаловать на портал TechSphere! Здесь вы найдете самую актуальную информацию о мире информационных технологий, обучающие материалы и многое другое.</p>
+            <div class="features">
+              <div class="feature-card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Актуальные новости</h3>
+                <p>Следите за последними событиями в мире IT</p>
+              </div>
+              <div class="feature-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Обучающие материалы</h3>
+                <p>Развивайте свои навыки с нашими курсами</p>
+              </div>
+              <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Сообщество</h3>
+                <p>Присоединяйтесь к сообществу IT-специалистов</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content-section" id="news">
+            <h2>Новости</h2>
+            <div class="news-container">
+              <div class="news-item">
+                <h3>Новые технологии искусственного интеллекта</h3>
+                <p class="date">12 Февраля 2025</p>
+                <p>Компании представили революционные решения в области искусственного интеллекта, которые изменят подход к обработке данных.</p>
+              </div>
+              <div class="news-item">
+                <h3>Развитие квантовых вычислений</h3>
+                <p class="date">24 Января 2025</p>
+                <p>Ученые достигли значительного прогресса в создании стабильных квантовых компьютеров.</p>
+              </div>
+              <div class="news-item">
+                <h3>Тренды веб-разработки 2025</h3>
+                <p class="date">14 Января 2025</p>
+                <p>Обзор самых популярных фреймворков и технологий для веб-разработки в текущем году.</p>
+              </div>
+              <div class="news-item">
+                <h3>Искусственный интеллект и автоматизация</h3>
+                <p class="date">27 Февраля 2025</p>
+                <p>
+                  <ul>
+                    <li>OpenAI представила новый GPT-5 с улучшенной обработкой естественного языка.</li>
+                    <li>Google внедряет квантовую криптографию для защиты данных.</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="news-item">
+                <h3>Программирование и технологии</h3>
+                <p class="date">28 Февраля 2025</p>
+                <p>
+                  <ul>
+                    <li>Вышел Python 4.0: что изменилось?</li>
+                    <li>Новый React 19 делает разработку еще быстрее.</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="news-item">
+                <h3>Гаджеты и разработки</h3>
+                <p class="date">1 Марта 2025</p>
+                <p>Apple анонсировала новую версию iPhone SE с уникальным чипом на базе ИИ.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content-section" id="education">
+            <h2>Обучение</h2>
+            <p>Наши образовательные программы помогут вам освоить современные технологии и стать востребованным специалистом.</p>
+            <div class="courses">
+              <div class="course-card">
+                <h3>Основы программирования</h3>
+                <p>Базовый курс для начинающих разработчиков</p>
+                <button class="btn">Подробнее</button>
+              </div>
+              <div class="course-card">
+                <h3>Веб-разработка</h3>
+                <p>Создание современных веб-приложений</p>
+                <button class="btn">Подробнее</button>
+              </div>
+              <div class="course-card">
+                <h3>Машинное обучение</h3>
+                <p>Алгоритмы и методы искусственного интеллекта</p>
+                <button class="btn">Подробнее</button>
+              </div>
+              <div class="course-card">
+                <h3>Популярные курсы:</h3>
+                <p>
+                  <ul>
+                    <li>Веб-разработка (HTML, CSS, JavaScript, React).</li>
+                    <li>Программирование на Python (анализ данных, автоматизация, ИИ).</li>
+                    <li>DevOps и облачные технологии (Docker, Kubernetes, AWS).</li>
+                  </ul>
+                </p>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content-section" id="blog">
+            <h2>Блог</h2>
+            <div class="blog-posts">
+              <div class="blog-post">
+                <h3>Как начать карьеру в IT с нуля</h3>
+                <p class="author">Автор: Сакенов Нурбол</p>
+                <p>Пошаговое руководство для тех, кто хочет войти в мир информационных технологий без предварительного опыта.</p>
+                <a href="#" class="read-more">Читать далее</a>
+              </div>
+              <div class="blog-post">
+                <h3>10 инструментов для повышения продуктивности разработчика</h3>
+                <p class="author">Автор: Сакенов Нурбол</p>
+                <p>Обзор полезных инструментов, которые помогут вам работать эффективнее и быстрее.</p>
+                <a href="#" class="read-more">Читать далее</a>
+              </div>
+              <div class="blog-post">
+                <h3>Будущее кибербезопасности</h3>
+                <p class="author">Автор: Сакенов Нурбол</p>
+                <p>Анализ современных угроз и тенденций в области информационной безопасности.</p>
+                <a href="#" class="read-more">Читать далее</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content-section" id="about">
+            <h2>О нас</h2>
+            <p>TechSphere — это информационный портал, посвященный современным технологиям и IT-индустрии. Наша миссия — делиться знаниями и помогать людям развиваться в сфере информационных технологий.</p>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Наша миссия</h3>
+                    <p>Сделать технологии доступными для каждого.</p>
+                </div>
+                <div class="feature-card">
+                  <h3>Наша команда</h3>
+                  <p>Разработчики, аналитики, эксперты в IT.</p>
+                </div>
+                <div class="feature-card">
+                  <h3>Мы ценим качество информации, простоту обучения и актуальность контента.</h3>
+                </div>
+              </div>
+          </div>
+          
+          <div class="content-section" id="contacts">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами, если у вас есть вопросы или предложения.</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <p>info@techsphere.kz</p>
+              </div>
+              <div class="contact-item">
+                <p>+7 (707) 859-19-74</p>
+              </div>
+              <div class="contact-item">
+                <p>г. Астана, И. Есенберлина 25, ЕНУ Колледж</p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3>Форма обратной связи</h3>
+              <form>
+                <div class="form-group">
+                  <label for="name">Имя</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Сообщение</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </main>
+        
+        <footer>
+          <p>&copy; 2025 TechSphere. Все права защищены.</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
